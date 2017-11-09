@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店铺装修</title>
+    <link rel="stylesheet" type="text/css" href="./shopzx_files/general.css">
+    <link rel="stylesheet" type="text/css" href="./shopzx_files/style.css">
+    <link rel="stylesheet" type="text/css" href="./shopzx_files/layer.css">
+    <link rel="stylesheet" type="text/css" href="./shopzx_files/dsc_visual.css">
+    <link rel="stylesheet" type="text/css" href="./shopzx_files/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="./shopzx_files/purebox.css">
+    <link rel="stylesheet" type="text/css" href="./shopzx_files/spectrum.css">
+    <link rel="stylesheet" type="text/css" href="./shopzx_files/perfect-scrollbar.min.css">
+    <link rel="stylesheet" type="text/css" href="./shopzx_files/style(1).css">
+
+    <script type="text/javascript" src="./shopzx_files/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="./shopzx_files/jquery.json.js"></script>
+    <script type="text/javascript" src="./shopzx_files/transport_jquery.js"></script>
+    <script type="text/javascript" src="./shopzx_files/perfect-scrollbar.min.js"></script>
+    <script type="text/javascript" src="./shopzx_files/jquery.nyroModal.js"></script>
+    <script type="text/javascript" src="./shopzx_files/plupload.full.min.js"></script>
+    <script type="text/javascript" src="./shopzx_files/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="./shopzx_files/jquery.form.js"></script>
+    <!-- <script type="text/javascript" src="./shopzx_files/lib_ecmobanFunc.js"></script> -->
+    <script type="text/javascript" src="./shopzx_files/visualization.js"></script>
+    <script type="text/javascript" src="./shopzx_files/jquery.cookie.js"></script>
+    <script type="text/javascript" src="./shopzx_files/spectrum.js"></script>
+    <!-- <script type="text/javascript" src="./shopzx_files/common.js"></script> -->
+    <script type="text/javascript" src="./shopzx_files/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="./shopzx_files/layer.js"></script>
+    <script type="text/javascript">
+    //这里把JS用到的所有语言都赋值到这里
+    var process_request = "正在处理您的请求...";
+    var todolist_caption = "记事本";
+    var todolist_autosave = "自动保存";
+    var todolist_save = "保存";
+    var todolist_clear = "清除";
+    var todolist_confirm_save = "是否将更改保存到记事本？";
+    var todolist_confirm_clear = "是否清空内容？";
+    </script>
+</head>
+
+<body>
+    <div class="main-wrapper wpst-toolbar-show">
+        <div class="design-nav-wrap">
+            <div class="head-left">
+                <img src="http://jianfengwang.com/Upload/mall/2017-08/59a4ceec75ac8.png">
+                <a href="#" target="view_window">店铺装修</a>
+            </div>
+            <div class="btns">
+                <a href="javascript:void(0);" class="btn btn_blue" ectype="downloadModal">确定发布</a>
+                <a href="javascript:void(0);" class="btn" style="" ectype="back">还原</a>
+                <a href="javascript:void(0);" class="btn" ectype="preview" data-ruid="1">预览</a>
+                <a href="#" class="btn" target="_blank">商家中心</a>
+            </div>
+        </div>
+        <div class="dp_leftcolumn">
+            <ul class="tab-bar">
+                <li class="modules current">
+                    <div class="wrap">
+                        <div class="left-line"></div>
+                        <i class="icon_temp"></i>
+                        <span>模块</span>
+                        <b class="right-small"></b>
+                    </div>
+                </li>
+                <li class="page-head">
+                    <div class="wrap">
+                        <div class="left-line"></div>
+                        <i class="icon_visualTop"></i>
+                        <span>页头</span>
+                        <b class="right-small"></b>
+                    </div>
+                </li>
+                <li class="page-content">
+                    <div class="wrap">
+                        <div class="left-line"></div>
+                        <i class="icon_visualCon"></i>
+                        <span>页面</span>
+                        <b class="right-small"></b>
+                    </div>
+                </li>
+            </ul>
+            <ul class="toolbar">
+                <li class="li modules-slide current">
+                    <b class="icon_cha" ectype="close"></b>
+                    <div class="inside">
+                        <p>选择所需模块，并拖动至相应位置</p>
+                    </div>
+                    <div class="modules-box">
+                        <div class="modules-wrap modules-wrap-current">
+                            <div class="head" ectype="head"><span>基础模块</span><i class="icon_xia"></i></div>
+                            <div class="module-list clearfix">
+                                <div class="visual-item lyrow lunbotu ui-draggable" data-mode="lunbo" data-purebox="adv" data-li="1" data-length="5">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_01.png"></span>
+                                            <span class="txt">图片轮播</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="shop_banner">
+                                            <div class="hd">
+                                                <ul></ul>
+                                            </div>
+                                            <div class="bd">
+                                                <ul data-type="range">
+                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><img src="./shopzx_files/shop_banner_pic.jpg"></a></li>
+                                                </ul>
+                                            </div>
+                                            <a href="javascript:;" class="prev" style="display:none;"></a>
+                                            <a href="javascript:;" class="next" style="display:none;"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="visual-item lyrow w1200 ui-draggable" data-mode="advImg1" data-purebox="adv" data-li="1" data-length="5" data-json="{}">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_02.png"></span>
+                                            <span class="txt">广告区一</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="adv_module">
+                                            <div class="hd">
+                                                <ul></ul>
+                                            </div>
+                                            <div class="bd">
+                                                <ul data-type="range">
+                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1"><img src="./shopzx_files/ad_01_pic.jpg"></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="visual-item lyrow w1200 ui-draggable" data-mode="advImg2" data-purebox="adv" data-length="2" data-li="1">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/2.png" width="1200"></span>
+                                            <span class="txt">广告区二</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="advertising">
+                                            <ul data-type="range">
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><img src="./shopzx_files/ad_02_a_pic.jpg" width="595" height="595"></a></li>
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><img src="./shopzx_files/ad_02_a_pic.jpg" width="595" height="595"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="visual-item lyrow w1200 ui-draggable" data-mode="advImg3" data-li="1" data-length="2" data-purebox="adv">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/3.png"></span>
+                                            <span class="txt">广告区三</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="advertising">
+                                            <ul data-type="range">
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><img src="./shopzx_files/ad_02_c_pic.jpg"></a></li>
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><img src="./shopzx_files/ad_02_d_pic.jpg"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="visual-item lyrow w1200 ui-draggable" data-mode="advImg4" data-purebox="adv" data-li="1">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/4.png"></span>
+                                            <span class="txt">广告区四</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="advertising">
+                                            <ul class="row6" data-type="range">
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><span class="btm"></span><img src="./shopzx_files/ad_03_pic.jpg"></a></li>
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><span class="btm"></span><img src="./shopzx_files/ad_03_pic.jpg"></a></li>
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><span class="btm"></span><img src="./shopzx_files/ad_03_pic.jpg"></a></li>
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><span class="btm"></span><img src="./shopzx_files/ad_03_pic.jpg"></a></li>
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><span class="btm"></span><img src="./shopzx_files/ad_03_pic.jpg"></a></li>
+                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><span class="btm"></span><img src="./shopzx_files/ad_03_pic.jpg"></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="visual-item lyrow w1200 ui-draggable" data-mode="floor" data-purebox="goods">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                            <span class="txt">商品楼层</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="floor" data-type="range">
+                                            <div class="mt">
+                                                <div class="con">
+                                                    <h2>商品楼层名称</h2>
+                                                    <p>商品楼层简单介绍文字</p>
+                                                </div>
+                                            </div>
+                                            <div class="mc w1200">
+                                                <ul class="row4">
+                                                    <li>
+                                                        <div class="img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1" title=""><img src="./shopzx_files/gd_pic_02.jpg"></a></div>
+                                                        <div class="info">
+                                                            <div class="name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1">商品名称</a></div>
+                                                            <div class="price">￥65.00</div>
+                                                            <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1">立即购买</a></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1" title=""><img src="./shopzx_files/gd_pic_02.jpg"></a></div>
+                                                        <div class="info">
+                                                            <div class="name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1">商品名称</a></div>
+                                                            <div class="price">￥65.00</div>
+                                                            <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1">立即购买</a></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1" title=""><img src="./shopzx_files/gd_pic_02.jpg"></a></div>
+                                                        <div class="info">
+                                                            <div class="name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1">商品名称</a></div>
+                                                            <div class="price">￥65.00</div>
+                                                            <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1">立即购买</a></div>
+                                                        </div>
+                                                    </li>
+                                                    <li>
+                                                        <div class="img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1" title=""><img src="./shopzx_files/gd_pic_02.jpg"></a></div>
+                                                        <div class="info">
+                                                            <div class="name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1">商品名称</a></div>
+                                                            <div class="price">￥65.00</div>
+                                                            <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1">立即购买</a></div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <input name="goods_info" type="hidden" value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="visual-item lyrow ui-draggable" data-mode="custom" data-purebox="cust">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_04.png"></span>
+                                            <span class="txt">自定义区</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="custom" data-type="range">
+                                            <div class="default ui-draggable ui-box-display">自定义内容，可以用来展示店铺的特色区域。</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modules-wrap modules-wrap-current mt20">
+                            <div class="head" ectype="head"><span>楼层模块</span><i class="icon_xia"></i></div>
+                            <div class="module-list clearfix">
+                                <!--楼层模板一-->
+                                <div class="visual-item lyrow w1200 homeFloor ui-draggable" data-mode="homeFloor" data-purebox="homeFloor" data-li="1" ectype="visualItme">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                            <span class="txt">楼层一</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="floor-content" data-type="range">
+                                            <div class="floor-line-con floorOne floor-color-type-1" data-title="主分类名称" data-idx="1" id="floor_1" ectype="floorItem">
+                                                <div class="floor-hd" ectype="floorTit">
+                                                    <i class="box_hd_arrow"></i>
+                                                    <i class="box_hd_dec"></i>
+                                                    <div class="hd-tit">主分类名称</div>
+                                                    <div class="hd-tags">
+                                                        <ul>
+                                                            <li class="first current">
+                                                                <span>新品推荐</span>
+                                                                <i class="arrowImg"></i>
+                                                            </li>
+                                                            <li ectype="floor_cat_content">
+                                                                <span>次级分类</span>
+                                                                <i class="arrowImg"></i>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="floor-bd bd-mode-01">
+                                                    <div class="bd-left">
+                                                        <div class="floor-left-slide">
+                                                            <div class="bd">
+                                                                <ul>
+                                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#"><img src="./shopzx_files/homeIndex_002.jpg" width="232" height="570"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="hd">
+                                                                <ul></ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="floor-left-adv">
+                                                            <a href="http:" class="mb10" target="_blank"><img src="./shopzx_files/homeIndex_004.jpg" width="232" height="280"></a>
+                                                            <a href="http:" target="_blank"><img src="./shopzx_files/homeIndex_004.jpg" width="232" height="280"></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-right">
+                                                        <div class="floor-tabs-content clearfix">
+                                                            <div class="f-r-main f-r-m-adv">
+                                                                <div class="f-r-m-item">
+                                                                    <a href="http:" target="_blank">
+                                                                        <div class="title">
+                                                                            <h3>主标题</h3>
+                                                                            <span>次标题</span>
+                                                                        </div>
+                                                                        <img src="./shopzx_files/homeIndex_004.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="f-r-m-item">
+                                                                    <a href="http:" target="_blank">
+                                                                        <div class="title">
+                                                                            <h3>主标题</h3>
+                                                                            <span>次标题</span>
+                                                                        </div>
+                                                                        <img src="./shopzx_files/homeIndex_004.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="f-r-m-item">
+                                                                    <a href="http:" target="_blank">
+                                                                        <div class="title">
+                                                                            <h3>主标题</h3>
+                                                                            <span>次标题</span>
+                                                                        </div>
+                                                                        <img src="./shopzx_files/homeIndex_004.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="f-r-m-item">
+                                                                    <a href="http:" target="_blank">
+                                                                        <div class="title">
+                                                                            <h3>主标题</h3>
+                                                                            <span>次标题</span>
+                                                                        </div>
+                                                                        <img src="./shopzx_files/homeIndex_004.jpg">
+                                                                    </a>
+                                                                </div>
+                                                                <div class="f-r-m-item f-r-m-i-double">
+                                                                    <a href="http:" target="_blank">
+                                                                        <div class="title">
+                                                                            <h3>主标题</h3>
+                                                                            <span>次标题</span>
+                                                                        </div>
+                                                                        <img src="./shopzx_files/homeIndex_006.jpg">
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="floor-fd">
+                                                    <div class="floor-fd-brand clearfix">
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--楼层模板二-->
+                                <div class="visual-item lyrow w1200 not-draggable homeFloor ui-draggable" data-mode="homeFloorModule" data-purebox="homeFloor" data-li="1" ectype="visualItme">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                            <span class="txt">楼层二</span>
+                                        </div>
+                                    </div>
+                                    <div class="module floormodule mr8" ectype="module">
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                        <div class="view" data-hierarchy="1">
+                                            <div class="floor-content" data-type="range">
+                                                <div class="floor-line-con floorTwo floor-color-type-1" data-title="主分类名称" data-idx="1" id="floor_1" ectype="floorItem">
+                                                    <div class="floor-hd" ectype="floorTit">
+                                                        <i class="box_hd_arrow"></i>
+                                                        <i class="box_hd_dec"></i>
+                                                        <div class="hd-tit">主分类名称</div>
+                                                        <div class="hd-tags">
+                                                            <ul>
+                                                                <li class="first current">
+                                                                    <span>新品推荐</span>
+                                                                    <i class="arrowImg"></i>
+                                                                </li>
+                                                                <li ectype="floor_cat_content">
+                                                                    <span>次级分类</span>
+                                                                    <i class="arrowImg"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="floor-bd">
+                                                        <div class="bd-left">
+                                                            <div class="floor-left-slide">
+                                                                <div class="bd">
+                                                                    <ul>
+                                                                        <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/homeIndex_013.jpg"></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="hd">
+                                                                    <ul></ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bd-right">
+                                                            <div class="floor-tabs-content clearfix">
+                                                                <div class="f-r-main f-r-m-adv">
+                                                                    <div class="f-r-m-item">
+                                                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                            <div class="title">
+                                                                                <h3>男童装</h3>
+                                                                                <span>新款上市</span>
+                                                                            </div>
+                                                                            <img src="./shopzx_files/homeIndex_012.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="f-r-m-item">
+                                                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                            <div class="title">
+                                                                                <h3>男童装</h3>
+                                                                                <span>新款上市</span>
+                                                                            </div>
+                                                                            <img src="./shopzx_files/homeIndex_012.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="f-r-m-item">
+                                                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                            <div class="title">
+                                                                                <h3>男童装</h3>
+                                                                                <span>新款上市</span>
+                                                                            </div>
+                                                                            <img src="./shopzx_files/homeIndex_012.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="f-r-m-item">
+                                                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                            <div class="title">
+                                                                                <h3>男童装</h3>
+                                                                                <span>新款上市</span>
+                                                                            </div>
+                                                                            <img src="./shopzx_files/homeIndex_012.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f-r-main">
+                                                                    <ul class="p-list">
+                                                                        <li class="opacity_img">
+                                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                                <div class="p-img"><img src="./shopzx_files/zhanwei.png"></div>
+                                                                                <div class="p-name">微琪思新款2016无袖牛仔连衣裙修身中短裙显瘦休闲背心裙</div>
+                                                                                <div class="p-price"><em>¥</em>370.50</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="opacity_img">
+                                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                                <div class="p-img"><img src="./shopzx_files/zhanwei.png"></div>
+                                                                                <div class="p-name">微琪思新款2016无袖牛仔连衣裙修身中短裙显瘦休闲背心裙</div>
+                                                                                <div class="p-price"><em>¥</em>370.50</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="opacity_img">
+                                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                                <div class="p-img"><img src="./shopzx_files/zhanwei.png"></div>
+                                                                                <div class="p-name">微琪思新款2016无袖牛仔连衣裙修身中短裙显瘦休闲背心裙</div>
+                                                                                <div class="p-price"><em>¥</em>370.50</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="opacity_img">
+                                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                                <div class="p-img"><img src="./shopzx_files/zhanwei.png"></div>
+                                                                                <div class="p-name">微琪思新款2016无袖牛仔连衣裙修身中短裙显瘦休闲背心裙</div>
+                                                                                <div class="p-price"><em>¥</em>370.50</div>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="floor-fd">
+                                                        <div class="floor-fd-brand clearfix">
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                    <div class="link"></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                    <div class="link"></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                    <div class="link"></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                    <div class="link"></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="module floormodule" ectype="module">
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                        <div class="view" data-hierarchy="2">
+                                            <div class="floor-content" data-type="range">
+                                                <div class="floor-line-con floorTwo floor-color-type-1" data-title="主分类名称" data-idx="1" id="floor_1" ectype="floorItem">
+                                                    <div class="floor-hd" ectype="floorTit">
+                                                        <div class="hd-tit">主分类名称</div>
+                                                        <div class="hd-tags">
+                                                            <ul>
+                                                                <li class="first current">
+                                                                    <span>新品推荐</span>
+                                                                    <i class="arrowImg"></i>
+                                                                </li>
+                                                                <li ectype="floor_cat_content">
+                                                                    <span>次级分类</span>
+                                                                    <i class="arrowImg"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="floor-bd">
+                                                        <div class="bd-left">
+                                                            <div class="floor-left-slide">
+                                                                <div class="bd">
+                                                                    <ul>
+                                                                        <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/homeIndex_013.jpg"></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="bd-right">
+                                                            <div class="floor-tabs-content clearfix">
+                                                                <div class="f-r-main f-r-m-adv">
+                                                                    <div class="f-r-m-item">
+                                                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                            <div class="title">
+                                                                                <h3>男童装</h3>
+                                                                                <span>新款上市</span>
+                                                                            </div>
+                                                                            <img src="./shopzx_files/homeIndex_012.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="f-r-m-item">
+                                                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                            <div class="title">
+                                                                                <h3>男童装</h3>
+                                                                                <span>新款上市</span>
+                                                                            </div>
+                                                                            <img src="./shopzx_files/homeIndex_012.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="f-r-m-item">
+                                                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                            <div class="title">
+                                                                                <h3>男童装</h3>
+                                                                                <span>新款上市</span>
+                                                                            </div>
+                                                                            <img src="./shopzx_files/homeIndex_012.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="f-r-m-item">
+                                                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                            <div class="title">
+                                                                                <h3>男童装</h3>
+                                                                                <span>新款上市</span>
+                                                                            </div>
+                                                                            <img src="./shopzx_files/homeIndex_012.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="f-r-main">
+                                                                    <ul class="p-list">
+                                                                        <li class="opacity_img">
+                                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                                <div class="p-img"><img src="./shopzx_files/zhanwei.png"></div>
+                                                                                <div class="p-name">微琪思新款2016无袖牛仔连衣裙修身中短裙显瘦休闲背心裙</div>
+                                                                                <div class="p-price"><em>¥</em>370.50</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="opacity_img">
+                                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                                <div class="p-img"><img src="./shopzx_files/zhanwei.png"></div>
+                                                                                <div class="p-name">微琪思新款2016无袖牛仔连衣裙修身中短裙显瘦休闲背心裙</div>
+                                                                                <div class="p-price"><em>¥</em>370.50</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="opacity_img">
+                                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                                <div class="p-img"><img src="./shopzx_files/zhanwei.png"></div>
+                                                                                <div class="p-name">微琪思新款2016无袖牛仔连衣裙修身中短裙显瘦休闲背心裙</div>
+                                                                                <div class="p-price"><em>¥</em>370.50</div>
+                                                                            </a>
+                                                                        </li>
+                                                                        <li class="opacity_img">
+                                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                                <div class="p-img"><img src="./shopzx_files/zhanwei.png"></div>
+                                                                                <div class="p-name">微琪思新款2016无袖牛仔连衣裙修身中短裙显瘦休闲背心裙</div>
+                                                                                <div class="p-price"><em>¥</em>370.50</div>
+                                                                            </a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="floor-fd">
+                                                        <div class="floor-fd-brand clearfix">
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                    <div class="link"></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                    <div class="link"></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                    <div class="link"></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                    <div class="link"></div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="item">
+                                                                <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                    <div class="link-l"></div>
+                                                                    <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--楼层模板三-->
+                                <div class="visual-item lyrow w1200 homeFloor ui-draggable" data-mode="homeFloorThree" data-purebox="homeFloor" data-li="1" ectype="visualItme">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                            <span class="txt">楼层三</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="floor-content" data-type="range">
+                                            <div class="floor-line-con floorThree floor-color-type-1" data-title="主分类名称" data-idx="1" id="floor_1" ectype="floorItem">
+                                                <div class="floor-hd" ectype="floorTit">
+                                                    <div class="hd-tit">主分类名称</div>
+                                                    <div class="hd-tags">
+                                                        <ul>
+                                                            <li class="first current">新品推荐</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="floor-bd FT-bd-more-01">
+                                                    <ul>
+                                                        <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual232x590.jpg"></a></li>
+                                                        <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual232x590.jpg"></a></li>
+                                                        <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual232x590.jpg"></a></li>
+                                                        <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual232x590.jpg"></a></li>
+                                                        <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual232x590.jpg"></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="floor-fd">
+                                                    <div class="floor-fd-brand clearfix">
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="item">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">
+                                                                <div class="link-l"></div>
+                                                                <div class="img"><img src="./shopzx_files/homeIndex_010.jpg" title="esprit"></div>
+                                                                <div class="link"></div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--楼层模板四-->
+                                <div class="visual-item lyrow w1200 homeFloor ui-draggable" data-mode="homeFloorFour" data-purebox="homeFloor" data-li="1" ectype="visualItme">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                            <span class="txt">楼层四</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="floor-content" data-type="range">
+                                            <div class="floor-line-con floorFour floor-color-type-3" data-title="主分类名称" data-idx="1" id="floor_1" ectype="floorItem">
+                                                <div class="floor-hd" ectype="floorTit">
+                                                    <div class="hd-tit">主分类名称</div>
+                                                    <div class="hd-tags">
+                                                        <ul>
+                                                            <li class="first current">新品推荐</li>
+                                                            <li>连衣裙</li>
+                                                            <li>毛衣外套</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="floor-bd FF-bd-more-01">
+                                                    <div class="bd-left">
+                                                        <div class="floor-left-adv">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual200x520.jpg"></a>
+                                                        </div>
+                                                        <div class="p-list">
+                                                            <ul>
+                                                                <li class="left-child opacity_img">
+                                                                    <div class="product">
+                                                                        <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="right-child opacity_img">
+                                                                    <div class="product">
+                                                                        <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="left-child opacity_img">
+                                                                    <div class="product">
+                                                                        <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="right-child opacity_img">
+                                                                    <div class="product">
+                                                                        <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-right">
+                                                        <div class="floor-left-adv">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual200x520.jpg"></a>
+                                                        </div>
+                                                        <div class="p-list">
+                                                            <ul>
+                                                                <li class="left-child opacity_img">
+                                                                    <div class="product">
+                                                                        <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="opacity_img">
+                                                                    <div class="product">
+                                                                        <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="left-child opacity_img">
+                                                                    <div class="product">
+                                                                        <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li class="opacity_img">
+                                                                    <div class="product">
+                                                                        <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--楼层模板五-->
+                                <div class="visual-item lyrow w1200 homeFloor ui-draggable" data-mode="homeFloorFive" data-purebox="homeFloor" data-li="1" ectype="visualItme">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                            <span class="txt">楼层五</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="floor-content" data-type="range">
+                                            <div class="floor-line-con floorFive floor-color-type-5" data-title="主分类名称" data-idx="1" id="floor_1" ectype="floorItem">
+                                                <div class="floor-hd" ectype="floorTit">
+                                                    <div class="hd-tit"><i class="iconfont icon-ele"></i><em class="iconfont icon-spot"></em>主分类名称</div>
+                                                    <div class="hd-tags">
+                                                        <ul>
+                                                            <li class="first current">新品推荐</li>
+                                                            <li>连衣裙</li>
+                                                            <li>毛衣外套</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="floor-bd FFI-bd-more-01">
+                                                    <div class="bd-left">
+                                                        <div class="floor-left-slide">
+                                                            <div class="bd">
+                                                                <ul>
+                                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual477x450.jpg"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="hd">
+                                                                <ul></ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="floor-left-adv">
+                                                            <ul>
+                                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual236x450.jpg"></a></li>
+                                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual236x450.jpg"></a></li>
+                                                                <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual236x450.jpg"></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="floor-fd">
+                                                    <div class="floor-fd-slide">
+                                                        <div class="bd">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                    <div class="p-info">
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">唐人基 灌汤鱼丸180g*4袋 福州鱼丸 贡丸冷冻肉丸海鲜</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                    <div class="p-info">
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">唐人基 灌汤鱼丸180g*4袋 福州鱼丸 贡丸冷冻肉丸海鲜</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                    <div class="p-info">
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">唐人基 灌汤鱼丸180g*4袋 福州鱼丸 贡丸冷冻肉丸海鲜</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                    <div class="p-info">
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">唐人基 灌汤鱼丸180g*4袋 福州鱼丸 贡丸冷冻肉丸海鲜</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                    <div class="p-info">
+                                                                        <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">唐人基 灌汤鱼丸180g*4袋 福州鱼丸 贡丸冷冻肉丸海鲜</a></div>
+                                                                        <div class="p-price"><em>¥</em>370.50</div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <a href="javascript:void(0);" class="ff-prev"></a>
+                                                        <a href="javascript:void(0);" class="ff-next"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--楼层模板六-->
+                                <div class="visual-item lyrow w1200 homeFloor ui-draggable" data-mode="homeFloorSix" data-purebox="homeFloor" data-li="1" ectype="visualItme">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                            <span class="txt">楼层六</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="floor-content" data-type="range">
+                                            <div class="floor-line-con floorSix floor-color-type-1" data-title="主分类名称" data-idx="1" id="floor_1" ectype="floorItem">
+                                                <div class="floor-hd" ectype="floorTit">
+                                                    <div class="hd-tit"><i class="icon"></i>主分类名称</div>
+                                                    <div class="hd-tags">
+                                                        <ul>
+                                                            <li class="first current">新品推荐</li>
+                                                            <li>连衣裙</li>
+                                                            <li>毛衣外套</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="floor-bd FS-bd-more-01">
+                                                    <div class="bd-left">
+                                                        <div class="floor-left-slide">
+                                                            <div class="bd">
+                                                                <ul>
+                                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual400x480.jpg"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="hd">
+                                                                <ul></ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="floor-brand">
+                                                            <div class="fb-bd">
+                                                                <ul>
+                                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/homeIndex_010.jpg"></a></li>
+                                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/homeIndex_010.jpg"></a></li>
+                                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/homeIndex_010.jpg"></a></li>
+                                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/homeIndex_010.jpg"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <a href="javascript:void(0);" class="prev"><i class="iconfont icon-left"></i></a>
+                                                            <a href="javascript:void(0);" class="next"><i class="iconfont icon-right"></i></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-right">
+                                                        <div class="floor-left-adv">
+                                                            <ul>
+                                                                <li class="f-bd-item child-double">
+                                                                    <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual400x240.jpg"></a>
+                                                                    <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual400x240.jpg"></a>
+                                                                </li>
+                                                                <li class="f-bd-item"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual200x480.jpg"></a></li>
+                                                                <li class="f-bd-item"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual200x480.jpg"></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--楼层模板七-->
+                                <div class="visual-item lyrow w1200 homeFloor ui-draggable" data-mode="homeFloorSeven" data-purebox="homeFloor" data-li="1" ectype="visualItme">
+                                    <div class="drag" data-html="not">
+                                        <div class="navLeft">
+                                            <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                            <span class="txt">楼层七</span>
+                                        </div>
+                                        <div class="setup_box">
+                                            <div class="barbg"></div>
+                                            <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                            <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                            <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                            <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                                        </div>
+                                    </div>
+                                    <div class="view">
+                                        <div class="floor-content" data-type="range">
+                                            <div class="floor-line-con floorSeven floor-color-type-1" data-title="主分类名称" data-idx="1" id="floor_1" ectype="floorItem">
+                                                <div class="ftit">
+                                                    <h3>逛了又逛</h3></div>
+                                                <div class="floor-bd FSE-bd-more-01">
+                                                    <div class="bd-left">
+                                                        <div class="floor-left-slide">
+                                                            <div class="bd">
+                                                                <ul>
+                                                                    <li><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual400x440.jpg"></a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="hd">
+                                                                <ul></ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="floor-nav">
+                                                            <ul>
+                                                                <li class="curr">新品推荐<i></i></li>
+                                                                <li>休闲食品<i></i></li>
+                                                                <li>油粮调味<i></i></li>
+                                                                <li>肉类<i></i></li>
+                                                                <li>休闲食品<i></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bd-right">
+                                                        <div class="floor-left-adv">
+                                                            <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/visual200x440.jpg"></a>
+                                                        </div>
+                                                        <div class="floor-tabs-content">
+                                                            <div class="f-r-main f-r-curr">
+                                                                <ul class="p-list">
+                                                                    <li class="child-curr opacity_img">
+                                                                        <div class="product">
+                                                                            <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                            <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                            <div class="p-price"><em>¥</em>370.50</div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="child-curr opacity_img">
+                                                                        <div class="product">
+                                                                            <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                            <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                            <div class="p-price"><em>¥</em>370.50</div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="child-curr opacity_img">
+                                                                        <div class="product">
+                                                                            <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                            <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                            <div class="p-price"><em>¥</em>370.50</div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="opacity_img">
+                                                                        <div class="product">
+                                                                            <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                            <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                            <div class="p-price"><em>¥</em>370.50</div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="opacity_img">
+                                                                        <div class="product">
+                                                                            <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                            <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                            <div class="p-price"><em>¥</em>370.50</div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="opacity_img">
+                                                                        <div class="product">
+                                                                            <div class="p-img"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><img src="./shopzx_files/zhanwei.png"></a></div>
+                                                                            <div class="p-name"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank">亿健家用彩屏多功能折叠</a></div>
+                                                                            <div class="p-price"><em>¥</em>370.50</div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="li page-head-slide" data-style="head">
+                    <b class="icon_cha" ectype="close"></b>
+                    <div class="page-head-bg-content">
+                        <div class="page-head-bg-content-wrap" style="height: 891px;">
+                            <div class="page-head-bg">
+                                <label class="tit">页头背景色：</label>
+                                <input type="hidden" class="tm-picker-trigger" value="" style="display: none;">
+                                <input type="checkbox" class="ui-checkbox" name="header_dis" value="0" id="header_dis">
+                                <label for="header_dis" class="ui-label">显示</label>
+                            </div>
+                            <div class="page-head-bgimg clearfix">
+                                <form action="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1" id="bgfileForm" method="post" enctype="multipart/form-data" runat="server">
+                                    <div>
+                                        <label class="tit">页头背景图：</label>
+                                    </div>
+                                    <div class="bgimg">
+                                        <input name="fileimg" type="hidden" value="images/bgimg.gif"><img id="showbgfile" src="./shopzx_files/bgimg.gif" alt=""></div>
+                                    <div class="action">
+                                        <div class="action-btn">
+                                            <a href="javascript:void(0);" class="ks-uploader-button">
+                                                <span class="btn-text">更换图片</span>
+                                                <div class="file-input-wrapper"><input type="file" name="hdfile" value="更换图片" class="file-input"></div>
+                                            </a>
+                                            <a href="javascript:void(0);" class="delete" ectype="delete_bg"></a>
+                                        </div>
+                                        <div class="content">
+                                            <div>文件格式：GIF,JPG,PNG</div>
+                                            <div>文件大小：200k以内</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="bg-show clearfix" style="display:none;">
+                                <div>背景显示：</div>
+                                <div class="bg-show-nr">
+                                    <a href="javascript:void(0);" data-bg-show="repeat">平铺</a>
+                                    <a href="javascript:void(0);" data-bg-show="repeat-y">纵向平铺</a>
+                                    <a href="javascript:void(0);" data-bg-show="repeat-x">横向平铺</a>
+                                    <a href="javascript:void(0);" data-bg-show="no-repeat">不平铺</a>
+                                </div>
+                            </div>
+                            <div class="bg-align clearfix" style="display:none;">
+                                <div>背景对齐：</div>
+                                <div class="bg-align-nr">
+                                    <a href="javascript:void(0);" data-bg-align="left">左对齐</a>
+                                    <a href="javascript:void(0);" data-bg-align="center">居中</a>
+                                    <a href="javascript:void(0);" data-bg-align="right">右对齐</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="li page-content-slide" data-style="content">
+                    <b class="iconfont icon_cha" ectype="close"></b>
+                    <div class="page-head-bg-content">
+                        <div class="page-head-bg-content-wrap" style="height: 891px;">
+                            <div class="page-head-bg">
+                                <label class="tit">页面背景色：</label>
+                                <input type="hidden" class="tm-picker-trigger" value="" style="display: none;">
+                                <input type="checkbox" class="ui-checkbox" name="content_dis" value="0" id="content_dis">
+                                <label for="content_dis" class="ui-label">显示</label>
+                            </div>
+                            <div class="page-head-bgimg clearfix">
+                                <form action="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1" id="bgfileForm" method="post" enctype="multipart/form-data" runat="server">
+                                    <div>
+                                        <label class="tit">页面背景图：</label>
+                                    </div>
+                                    <div class="bgimg">
+                                        <input name="fileimg" type="hidden" value="images/bgimg.gif"><img id="confilefile" src="./shopzx_files/bgimg.gif" alt=""></div>
+                                    <div class="action">
+                                        <div class="action-btn">
+                                            <a href="javascript:void(0);" class="ks-uploader-button">
+                                                <span class="btn-text">更换图片</span>
+                                                <div class="file-input-wrapper"><input type="file" name="confile" value="更换图片" class="file-input"></div>
+                                            </a>
+                                            <a href="javascript:void(0);" class="delete" ectype="delete_bg"></a>
+                                        </div>
+                                        <div class="content">
+                                            <div>文件格式：GIF,JPG,PNG</div>
+                                            <div>文件大小：200k以内</div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="bg-show clearfix" style="display:none;">
+                                <div>背景显示：</div>
+                                <div class="bg-show-nr">
+                                    <a href="javascript:void(0);" data-bg-show="repeat">平铺</a>
+                                    <a href="javascript:void(0);" data-bg-show="repeat-y">纵向平铺</a>
+                                    <a href="javascript:void(0);" data-bg-show="repeat-x">横向平铺</a>
+                                    <a href="javascript:void(0);" data-bg-show="no-repeat">不平铺</a>
+                                </div>
+                            </div>
+                            <div class="bg-align clearfix" style="display:none;">
+                                <div>背景对齐：</div>
+                                <div class="bg-align-nr">
+                                    <a href="javascript:void(0);" data-bg-align="left">左对齐</a>
+                                    <a href="javascript:void(0);" data-bg-align="center">居中</a>
+                                    <a href="javascript:void(0);" data-bg-align="right">右对齐</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="db_main">
+            <div class="pc-page store_tpl_1" ectype="visualShell" style="height: 860px; width: 1610px;">
+                <div class="hd_main">
+                    <div class="hd_bg" style="background-image: none; background-color: rgb(237, 237, 237);">
+                        <div class="header lyrow ui-draggable ui-box-display w1200" data-mode="header_mode" data-purebox="header">
+                            <div class="banner-box" data-type="range">
+                                <div class="spec" data-spec="{&quot;header_type&quot;:&quot;defalt_type&quot;,&quot;headerbg_img&quot;:&quot;../data/seller_templates/seller_tem_1/store_tpl_1/images/slide_1490313568.jpg&quot;,&quot;picHeight&quot;:&quot;128&quot;,&quot;custom_content&quot;:&quot;&quot;}"><img src="./shopzx_files/slide_1490313568.jpg"></div>
+                            </div>
+                            <div class="setup_box" data-html="not">
+                                <div class="barbg"></div>
+                                <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav_bg" style="background-color: rgb(0, 0, 0);">
+                        <div class="nav lyrow ui-draggable ui-box-display w1200" data-mode="nav_mode" data-purebox="nav">
+                            <div class="store_nav_left w200">
+                                <div class="all_box">
+                                    <div class="all_cats">
+                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#">店铺全部分类</a>
+                                    </div>
+                                    <div class="all_cats_tcc">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store_nav_right">
+                                <ul data-type="range">
+                                    <li class="current"><a href="https://demo.dscmall.cn/seller/1" class="nav_hover" style="text-align:left" target="_blank">首页</a></li>
+                                    <li><a href="https://demo.dscmall.cn/seller/merchants_store.php?merchant_id=1&amp;id=12" style="text-align:left" target="_blank">洗衣机</a></li>
+                                    <li><a href="https://demo.dscmall.cn/seller/merchants_store.php?merchant_id=1&amp;id=1" style="text-align:left" target="_blank">LED灯</a></li>
+                                    <!---->
+                                    <div class="spec" data-spec="{&quot;navColor&quot;:&quot;#000000&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;align&quot;:&quot;left&quot;}"></div>
+                                </ul>
+                            </div>
+                            <div class="setup_box" data-html="not">
+                                <div class="barbg">
+                                </div>
+                                <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prompt" data-html="not">
+                    以上为页头区域
+                </div>
+                <div class="demo ui-sortable" style="min-height: 921px; background-image: none; background-color: transparent; background-position: 100% 50%; background-repeat: repeat;">
+                    <div class="visual-item lyrow lunbotu ui-draggable" data-mode="lunbo" data-purebox="adv" data-li="1" data-length="5" data-diff="0" style="display: block; position: relative; opacity: 1; left: 0px; top: 0px;">
+                        <div class="drag" data-html="not">
+                            <div class="navLeft">
+                                <span class="pic"><img src="./shopzx_files/navLeft_01.png"></span>
+                                <span class="txt">图片轮播</span>
+                            </div>
+                            <div class="setup_box">
+                                <div class="barbg">
+                                </div>
+                                <a href="javascript:void(0);" class="move-up icon_up_btn disabled"></a>
+                                <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                            </div>
+                        </div>
+                        <div class="view">
+                            <div class="shop_banner shade">
+                                <div class="hd">
+                                    <ul class="on">
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <ul data-type="range">
+                                        <li style="height:600px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" style="background:url(../data/gallery_album/1/original_img/1490147943339835424.jpg) center center no-repeat;"></a></li>
+                                        <li style="height: 600px; display: none;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" style="background:url(../data/gallery_album/1/original_img/1490147943219247129.jpg) center center no-repeat;"></a></li>
+                                        <li style="height: 600px; display: none;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" style="background:url(../data/gallery_album/1/original_img/1490147944293660424.jpg) center center no-repeat;"></a></li>
+                                        <!---->
+                                    </ul>
+                                    <div class="spec" data-spec="{&quot;picHeight&quot;:&quot;600&quot;,&quot;slide_type&quot;:&quot;shade&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;is_li&quot;:1,&quot;bg_color&quot;:[&quot;&quot;,&quot;&quot;,&quot;&quot;],&quot;pic_src&quot;:[&quot;data/gallery_album/1/original_img/1490147943339835424.jpg&quot;,&quot;data/gallery_album/1/original_img/1490147943219247129.jpg&quot;,&quot;data/gallery_album/1/original_img/1490147944293660424.jpg&quot;],&quot;link&quot;:&quot;#,#,#&quot;,&quot;sort&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]}"></div>
+                                </div>
+                                <a href="javascript:;" class="prev" style="display:none;"></a>
+                                <a href="javascript:;" class="next" style="display:none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-item lyrow w1200 ui-draggable" data-mode="floor" data-purebox="goods" data-diff="1" style="display: block;">
+                        <div class="drag" data-html="not">
+                            <div class="navLeft">
+                                <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                <span class="txt">商品楼层</span>
+                            </div>
+                            <div class="setup_box">
+                                <div class="barbg">
+                                </div>
+                                <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                            </div>
+                        </div>
+                        <div class="view">
+                            <div class="floor" data-type="range">
+                                <div class="mt">
+                                    <div class="con">
+                                        <h2>2016秋季新品发布</h2>
+                                        <p>秋季新品 - 女装</p>
+                                    </div>
+                                </div>
+                                <div class="mc w1200">
+                                    <ul class="row3">
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=687"><img src="./shopzx_files/0_G_1490146354522.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=687">超薄创意 吸顶灯客厅灯长方形大气现代简约LED主卧室灯餐厅灯具 特别提醒 三色调光和高亮款不支持手机控制</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>368.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=687">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=688"><img src="./shopzx_files/0_G_1490146521070.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=688">飞科吹风机家用大功率发廊理发店冷热风负离子静音学生电吹风筒 人气爆品6档调节 水润负离子恒温护发</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>87.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=688">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=689"><img src="./shopzx_files/0_G_1490146589471.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=689">美的电磁炉Midea/美的 C21-WT2116超薄触摸屏电磁炉特价家用正品 纤薄机身 二级能效 更省电</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>269.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=689">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=690"><img src="./shopzx_files/0_G_1490147016791.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=690">SUPOR/苏泊尔 CFXB40HC807-120家用智能IH球釜电饭煲3-4人正品4L</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>599.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=690">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=691"><img src="./shopzx_files/0_G_1490147066526.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=691">Xiaomi/小米 米家IH电饭煲 小米智能家用wifi电饭锅3L手机控制 小米专卖店 正品授权</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>398.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=691">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=692"><img src="./shopzx_files/0_G_1490147116022.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=692">海尔落地扇家用电风扇遥控静音 办公室风扇 学生宿舍立式摇头风扇 五叶飓风 全国联保 大风力 超静音</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>139.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=692">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <!---->
+                                    </ul>
+                                    <input name="goods_info" type="hidden" value="6,11,13,14,20,22,687,688,689,690,691,692">
+                                    <div class="spec" data-spec="{&quot;cat_desc&quot;:&quot;秋季新品 - 女装&quot;,&quot;goods_ids&quot;:&quot;6,11,13,14,20,22,687,688,689,690,691,692&quot;,&quot;cat_name&quot;:&quot;2016秋季新品发布&quot;,&quot;align&quot;:&quot;left&quot;,&quot;is_title&quot;:&quot;1&quot;,&quot;itemsLayout&quot;:&quot;row3&quot;}"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-item lyrow w1200 ui-draggable" data-mode="advImg4" data-purebox="adv" data-li="1" data-diff="1" style="display: block;">
+                        <div class="drag" data-html="not">
+                            <div class="navLeft">
+                                <span class="pic"><img src="./shopzx_files/navLeft_02.png"></span>
+                                <span class="txt">广告区四</span>
+                            </div>
+                            <div class="setup_box">
+                                <div class="barbg">
+                                </div>
+                                <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                            </div>
+                        </div>
+                        <div class="view">
+                            <div class="advertising">
+                                <ul class="row5" data-type="range">
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147944892522367.jpg" width="" height=""></a></li>
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147945457339647.jpg" width="" height=""></a></li>
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147945692082280.jpg" width="" height=""></a></li>
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147946153269740.jpg" width="" height=""></a></li>
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147945833456191.jpg" width="" height=""></a></li>
+                                    <!---->
+                                </ul>
+                                <div class="spec" data-spec="{&quot;picHeight&quot;:&quot;337&quot;,&quot;itemsLayout&quot;:&quot;row5&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;is_li&quot;:1,&quot;bg_color&quot;:[],&quot;pic_src&quot;:[&quot;data/gallery_album/1/original_img/1490147944892522367.jpg&quot;,&quot;data/gallery_album/1/original_img/1490147945457339647.jpg&quot;,&quot;data/gallery_album/1/original_img/1490147945692082280.jpg&quot;,&quot;data/gallery_album/1/original_img/1490147946153269740.jpg&quot;,&quot;data/gallery_album/1/original_img/1490147945833456191.jpg&quot;],&quot;link&quot;:&quot;#,#,#,#,#&quot;,&quot;sort&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-item lyrow w1200 ui-draggable" data-mode="advImg1" data-purebox="adv" data-li="1" data-length="3" data-json="{}" data-diff="1" style="display: block;">
+                        <div class="drag" data-html="not">
+                            <div class="navLeft">
+                                <span class="pic"><img src="./shopzx_files/navLeft_02.png"></span>
+                                <span class="txt">广告区一</span>
+                            </div>
+                            <div class="setup_box">
+                                <div class="barbg">
+                                </div>
+                                <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                <a href="javascript:void(0);" class="move-down icon_down_btn"></a>
+                                <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                            </div>
+                        </div>
+                        <div class="view">
+                            <div class="adv_module yesSlide">
+                                <div class="hd">
+                                    <ul class="on">
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <ul data-type="range">
+                                        <li style="height:400px;"><img src="./shopzx_files/1490147946521391015.jpg" width="" height=""></li>
+                                        <li style="height: 400px; display: none;"><img src="./shopzx_files/1490147947846510745.jpg" width="" height=""></li>
+                                        <!---->
+                                    </ul>
+                                    <div class="spec" data-spec="{&quot;picHeight&quot;:&quot;400&quot;,&quot;slide_type&quot;:&quot;yesSlide&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;is_li&quot;:1,&quot;bg_color&quot;:[],&quot;pic_src&quot;:[&quot;data/gallery_album/1/original_img/1490147946521391015.jpg&quot;,&quot;data/gallery_album/1/original_img/1490147947846510745.jpg&quot;],&quot;link&quot;:&quot;,&quot;,&quot;sort&quot;:[&quot;1&quot;,&quot;2&quot;]}"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-item lyrow w1200 ui-draggable" data-mode="floor" data-purebox="goods" data-diff="2" style="display: block;">
+                        <div class="drag" data-html="not">
+                            <div class="navLeft">
+                                <span class="pic"><img src="./shopzx_files/navLeft_03.png"></span>
+                                <span class="txt">商品楼层</span>
+                            </div>
+                            <div class="setup_box">
+                                <div class="barbg">
+                                </div>
+                                <a href="javascript:void(0);" class="move-up icon_up_btn"></a>
+                                <a href="javascript:void(0);" class="move-down icon_down_btn disabled"></a>
+                                <a href="javascript:void(0);" class="move-edit" ectype="model_edit"><i class="icon_edit_btn"></i>编辑</a>
+                                <a href="javascript:void(0);" class="move-remove"><i class="icon_remove-alt"></i>删除</a>
+                            </div>
+                        </div>
+                        <div class="view">
+                            <div class="floor" data-type="range">
+                                <div class="mc w1200">
+                                    <ul class="row5">
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=687"><img src="./shopzx_files/0_G_1490146354522.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=687">超薄创意 吸顶灯客厅灯长方形大气现代简约LED主卧室灯餐厅灯具 特别提醒 三色调光和高亮款不支持手机控制</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>368.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=687">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=688"><img src="./shopzx_files/0_G_1490146521070.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=688">飞科吹风机家用大功率发廊理发店冷热风负离子静音学生电吹风筒 人气爆品6档调节 水润负离子恒温护发</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>87.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=688">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=689"><img src="./shopzx_files/0_G_1490146589471.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=689">美的电磁炉Midea/美的 C21-WT2116超薄触摸屏电磁炉特价家用正品 纤薄机身 二级能效 更省电</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>269.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=689">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=690"><img src="./shopzx_files/0_G_1490147016791.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=690">SUPOR/苏泊尔 CFXB40HC807-120家用智能IH球釜电饭煲3-4人正品4L</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>599.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=690">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=691"><img src="./shopzx_files/0_G_1490147066526.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=691">Xiaomi/小米 米家IH电饭煲 小米智能家用wifi电饭锅3L手机控制 小米专卖店 正品授权</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>398.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=691">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=692"><img src="./shopzx_files/0_G_1490147116022.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=692">海尔落地扇家用电风扇遥控静音 办公室风扇 学生宿舍立式摇头风扇 五叶飓风 全国联保 大风力 超静音</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>139.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=692">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=693"><img src="./shopzx_files/0_G_1490147169027.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=693">Changhong/长虹 55G6 55吋液晶电视机4k曲面平板电视智能网络wifi 曲面 4K超清 双64位 U-MAX</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>4099.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=693">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=694"><img src="./shopzx_files/0_G_1490147285511.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=694">TCL取暖器小太阳电暖器台式电暖气暖风机烤火炉电暖风家用学生 700W功率 两档调节 碳纤维发热</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>60.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=694">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=695"><img src="./shopzx_files/0_G_1490147339059.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=695">JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>88.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=695">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=696"><img src="./shopzx_files/0_G_1490147569250.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=696">飞科全身水洗智能电动充电式剃须刀男士刮胡刀胡须刀刮胡子FS375 全身水洗 座充设计 智能操控系统</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>149.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=696">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <!---->
+                                    </ul>
+                                    <input name="goods_info" type="hidden" value="37,36,39,42,43,45,48,61,57,53,688,689,690,691,687,692,693,694,695,696">
+                                    <div class="spec" data-spec="{&quot;cat_desc&quot;:&quot;&quot;,&quot;goods_ids&quot;:&quot;37,36,39,42,43,45,48,61,57,53,688,689,690,691,687,692,693,694,695,696&quot;,&quot;cat_name&quot;:&quot;&quot;,&quot;align&quot;:&quot;left&quot;,&quot;is_title&quot;:&quot;0&quot;,&quot;itemsLayout&quot;:&quot;row5&quot;}"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="df_hidden">
+            <input type="hidden" name="suffix" value="store_tpl_1" data-section="vis_seller_store">
+            <div id="preview-layout">
+                <div class="hd_main">
+                    <div class="hd_bg" style="background-image: none; background-color: rgb(237, 237, 237);">
+                        <div class="header w1200" data-mode="header_mode" data-purebox="header">
+                            <div class="banner-box" data-type="range">
+                                <div class="spec" data-spec=""><img src="./shopzx_files/slide_1490313568.jpg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav_bg" style="background-color: rgb(0, 0, 0);">
+                        <div class="nav w1200" data-mode="nav_mode" data-purebox="nav">
+                            <div class="store_nav_left w200">
+                                <div class="all_box">
+                                    <div class="all_cats">
+                                        <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#">店铺全部分类</a>
+                                    </div>
+                                    <div class="all_cats_tcc">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="store_nav_right">
+                                <ul data-type="range">
+                                    <li class="current"><a href="https://demo.dscmall.cn/seller/1" class="nav_hover" style="text-align:left" target="_blank">首页</a></li>
+                                    <li><a href="https://demo.dscmall.cn/seller/merchants_store.php?merchant_id=1&amp;id=12" style="text-align:left" target="_blank">洗衣机</a></li>
+                                    <li><a href="https://demo.dscmall.cn/seller/merchants_store.php?merchant_id=1&amp;id=1" style="text-align:left" target="_blank">LED灯</a></li>
+                                    <!---->
+                                    <div class="spec" data-spec=""></div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content" style="min-height: 492px; background-image: none; background-color: transparent; background-position: 100% 50%; background-repeat: repeat;">
+                    <div class="visual-item" data-mode="lunbo" data-purebox="adv" data-li="1" data-length="5" data-diff="0" style="display: block; position: relative; opacity: 1; left: 0px; top: 0px;">
+                        <div class="view">
+                            <div class="shop_banner shade">
+                                <div class="hd">
+                                    <ul class="on">
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <ul data-type="range">
+                                        <li style="height:600px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" style="background:url(../data/gallery_album/1/original_img/1490147943339835424.jpg) center center no-repeat;"></a></li>
+                                        <li style="height: 600px; display: none;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" style="background:url(../data/gallery_album/1/original_img/1490147943219247129.jpg) center center no-repeat;"></a></li>
+                                        <li style="height: 600px; display: none;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" style="background:url(../data/gallery_album/1/original_img/1490147944293660424.jpg) center center no-repeat;"></a></li>
+                                        <!---->
+                                    </ul>
+                                    <div class="spec" data-spec=""></div>
+                                </div>
+                                <a href="javascript:;" class="prev" style="display:none;"></a>
+                                <a href="javascript:;" class="next" style="display:none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-item w1200" data-mode="floor" data-purebox="goods" data-diff="1" style="display: block;">
+                        <div class="view">
+                            <div class="floor" data-type="range">
+                                <div class="mt">
+                                    <div class="con">
+                                        <h2>2016秋季新品发布</h2>
+                                        <p>秋季新品 - 女装</p>
+                                    </div>
+                                </div>
+                                <div class="mc w1200">
+                                    <ul class="row3">
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=687"><img src="./shopzx_files/0_G_1490146354522.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=687">超薄创意 吸顶灯客厅灯长方形大气现代简约LED主卧室灯餐厅灯具 特别提醒 三色调光和高亮款不支持手机控制</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>368.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=687">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=688"><img src="./shopzx_files/0_G_1490146521070.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=688">飞科吹风机家用大功率发廊理发店冷热风负离子静音学生电吹风筒 人气爆品6档调节 水润负离子恒温护发</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>87.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=688">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=689"><img src="./shopzx_files/0_G_1490146589471.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=689">美的电磁炉Midea/美的 C21-WT2116超薄触摸屏电磁炉特价家用正品 纤薄机身 二级能效 更省电</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>269.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=689">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=690"><img src="./shopzx_files/0_G_1490147016791.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=690">SUPOR/苏泊尔 CFXB40HC807-120家用智能IH球釜电饭煲3-4人正品4L</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>599.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=690">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=691"><img src="./shopzx_files/0_G_1490147066526.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=691">Xiaomi/小米 米家IH电饭煲 小米智能家用wifi电饭锅3L手机控制 小米专卖店 正品授权</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>398.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=691">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=692"><img src="./shopzx_files/0_G_1490147116022.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=692">海尔落地扇家用电风扇遥控静音 办公室风扇 学生宿舍立式摇头风扇 五叶飓风 全国联保 大风力 超静音</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>139.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=692">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <!---->
+                                    </ul>
+                                    <input name="goods_info" type="hidden" value="6,11,13,14,20,22,687,688,689,690,691,692">
+                                    <div class="spec" data-spec=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-item w1200" data-mode="advImg4" data-purebox="adv" data-li="1" data-diff="1" style="display: block;">
+                        <div class="view">
+                            <div class="advertising">
+                                <ul class="row5" data-type="range">
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147944892522367.jpg" width="" height=""></a></li>
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147945457339647.jpg" width="" height=""></a></li>
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147945692082280.jpg" width="" height=""></a></li>
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147946153269740.jpg" width="" height=""></a></li>
+                                    <li style="height:337px;"><a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#" target="_blank"><span class="btm"></span><img src="./shopzx_files/1490147945833456191.jpg" width="" height=""></a></li>
+                                    <!---->
+                                </ul>
+                                <div class="spec" data-spec=""></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-item w1200" data-mode="advImg1" data-purebox="adv" data-li="1" data-length="3" data-json="{}" data-diff="1" style="display: block;">
+                        <div class="view">
+                            <div class="adv_module yesSlide">
+                                <div class="hd">
+                                    <ul class="on">
+                                    </ul>
+                                </div>
+                                <div class="bd">
+                                    <ul data-type="range">
+                                        <li style="height:400px;"><img src="./shopzx_files/1490147946521391015.jpg" width="" height=""></li>
+                                        <li style="height: 400px; display: none;"><img src="./shopzx_files/1490147947846510745.jpg" width="" height=""></li>
+                                        <!---->
+                                    </ul>
+                                    <div class="spec" data-spec=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visual-item w1200" data-mode="floor" data-purebox="goods" data-diff="2" style="display: block;">
+                        <div class="view">
+                            <div class="floor" data-type="range">
+                                <div class="mc w1200">
+                                    <ul class="row5">
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=687"><img src="./shopzx_files/0_G_1490146354522.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=687">超薄创意 吸顶灯客厅灯长方形大气现代简约LED主卧室灯餐厅灯具 特别提醒 三色调光和高亮款不支持手机控制</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>368.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=687">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=688"><img src="./shopzx_files/0_G_1490146521070.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=688">飞科吹风机家用大功率发廊理发店冷热风负离子静音学生电吹风筒 人气爆品6档调节 水润负离子恒温护发</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>87.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=688">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=689"><img src="./shopzx_files/0_G_1490146589471.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=689">美的电磁炉Midea/美的 C21-WT2116超薄触摸屏电磁炉特价家用正品 纤薄机身 二级能效 更省电</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>269.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=689">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=690"><img src="./shopzx_files/0_G_1490147016791.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=690">SUPOR/苏泊尔 CFXB40HC807-120家用智能IH球釜电饭煲3-4人正品4L</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>599.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=690">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=691"><img src="./shopzx_files/0_G_1490147066526.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=691">Xiaomi/小米 米家IH电饭煲 小米智能家用wifi电饭锅3L手机控制 小米专卖店 正品授权</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>398.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=691">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=692"><img src="./shopzx_files/0_G_1490147116022.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=692">海尔落地扇家用电风扇遥控静音 办公室风扇 学生宿舍立式摇头风扇 五叶飓风 全国联保 大风力 超静音</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>139.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=692">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=693"><img src="./shopzx_files/0_G_1490147169027.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=693">Changhong/长虹 55G6 55吋液晶电视机4k曲面平板电视智能网络wifi 曲面 4K超清 双64位 U-MAX</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>4099.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=693">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=694"><img src="./shopzx_files/0_G_1490147285511.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=694">TCL取暖器小太阳电暖器台式电暖气暖风机烤火炉电暖风家用学生 700W功率 两档调节 碳纤维发热</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>60.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=694">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=695"><img src="./shopzx_files/0_G_1490147339059.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=695">JOMOO九牧精铜单冷快开水龙头洗衣机快开水龙头自来水嘴</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>88.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=695">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="img"><a href="https://demo.dscmall.cn/seller/goods.php?id=696"><img src="./shopzx_files/0_G_1490147569250.jpg"></a></div>
+                                            <div class="info">
+                                                <div class="name"><a href="https://demo.dscmall.cn/seller/goods.php?id=696">飞科全身水洗智能电动充电式剃须刀男士刮胡刀胡须刀刮胡子FS375 全身水洗 座充设计 智能操控系统</a></div>
+                                                <div class="price">
+                                                    <em>¥</em>149.00 </div>
+                                                <div class="btn_hover"><a href="https://demo.dscmall.cn/seller/goods.php?id=696">立即购买</a></div>
+                                            </div>
+                                        </li>
+                                        <!---->
+                                    </ul>
+                                    <input name="goods_info" type="hidden" value="37,36,39,42,43,45,48,61,57,53,688,689,690,691,687,692,693,694,695,696">
+                                    <div class="spec" data-spec=""></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="head-layout">
+                <div class="hd_bg" style="background-image: none; background-color: rgb(237, 237, 237);">
+                    <div class="header w1200" data-mode="header_mode" data-purebox="header">
+                        <div class="banner-box" data-type="range">
+                            <div class="spec" data-spec="{&quot;header_type&quot;:&quot;defalt_type&quot;,&quot;headerbg_img&quot;:&quot;../data/seller_templates/seller_tem_1/store_tpl_1/images/slide_1490313568.jpg&quot;,&quot;picHeight&quot;:&quot;128&quot;,&quot;custom_content&quot;:&quot;&quot;}"><img src="./shopzx_files/slide_1490313568.jpg"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav_bg" style="background-color: rgb(0, 0, 0);">
+                    <div class="nav w1200" data-mode="nav_mode" data-purebox="nav">
+                        <div class="store_nav_left w200">
+                            <div class="all_box">
+                                <div class="all_cats">
+                                    <a href="https://demo.dscmall.cn/seller/visual_editing.php?act=first&amp;code=store_tpl_1#">店铺全部分类</a>
+                                </div>
+                                <div class="all_cats_tcc">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="store_nav_right">
+                            <ul data-type="range">
+                                <li class="current"><a href="https://demo.dscmall.cn/seller/1" class="nav_hover" style="text-align:left" target="_blank">首页</a></li>
+                                <li><a href="https://demo.dscmall.cn/seller/merchants_store.php?merchant_id=1&amp;id=12" style="text-align:left" target="_blank">洗衣机</a></li>
+                                <li><a href="https://demo.dscmall.cn/seller/merchants_store.php?merchant_id=1&amp;id=1" style="text-align:left" target="_blank">LED灯</a></li>
+                                <!---->
+                                <div class="spec" data-spec="{&quot;navColor&quot;:&quot;#000000&quot;,&quot;target&quot;:&quot;_blank&quot;,&quot;align&quot;:&quot;left&quot;}"></div>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./shopzx_files/jquery.purebox.js"></script>
+    <script type="text/javascript" src="./shopzx_files/jquery.picTip.js"></script>
+    <div id="toolTipLayer" style="position: absolute; z-index: 999999; display: none; visibility: visible; left: 1677px; top: 921px;"></div>
+    <script type="text/javascript">
+    $(function() {
+        $("[ectype='visualShell']").find('[data-mode="nav_mode"]').attr("data-purebox", 'nav');
+    });
+
+    function getcolor() {
+        var color = $(".tm-picker-trigger").val();
+        if (color == '') {
+            color = "#fff";
+        }
+
+        //商品名称颜色设置
+        $(".page-head-bg .tm-picker-trigger").spectrum({
+            showInitial: true,
+            showPalette: true,
+            showSelectionPalette: true,
+            showInput: true,
+            color: color,
+            showSelectionPalette: true,
+            maxPaletteSize: 10,
+            preferredFormat: "hex",
+            palette: [
+                ["rgb(0, 0, 0)", "rgb(67, 67, 67)", "rgb(102, 102, 102)",
+                    "rgb(204, 204, 204)", "rgb(217, 217, 217)", "rgb(255, 255, 255)"
+                ],
+                ["rgb(152, 0, 0)", "rgb(255, 0, 0)", "rgb(255, 153, 0)", "rgb(255, 255, 0)", "rgb(0, 255, 0)",
+                    "rgb(0, 255, 255)", "rgb(74, 134, 232)", "rgb(0, 0, 255)", "rgb(153, 0, 255)", "rgb(255, 0, 255)"
+                ],
+                ["rgb(230, 184, 175)", "rgb(244, 204, 204)", "rgb(252, 229, 205)", "rgb(255, 242, 204)", "rgb(217, 234, 211)",
+                    "rgb(208, 224, 227)", "rgb(201, 218, 248)", "rgb(207, 226, 243)", "rgb(217, 210, 233)", "rgb(234, 209, 220)",
+                    "rgb(221, 126, 107)", "rgb(234, 153, 153)", "rgb(249, 203, 156)", "rgb(255, 229, 153)", "rgb(182, 215, 168)",
+                    "rgb(162, 196, 201)", "rgb(164, 194, 244)", "rgb(159, 197, 232)", "rgb(180, 167, 214)", "rgb(213, 166, 189)",
+                    "rgb(204, 65, 37)", "rgb(224, 102, 102)", "rgb(246, 178, 107)", "rgb(255, 217, 102)", "rgb(147, 196, 125)",
+                    "rgb(118, 165, 175)", "rgb(109, 158, 235)", "rgb(111, 168, 220)", "rgb(142, 124, 195)", "rgb(194, 123, 160)",
+                    "rgb(166, 28, 0)", "rgb(204, 0, 0)", "rgb(230, 145, 56)", "rgb(241, 194, 50)", "rgb(106, 168, 79)",
+                    "rgb(69, 129, 142)", "rgb(60, 120, 216)", "rgb(61, 133, 198)", "rgb(103, 78, 167)", "rgb(166, 77, 121)",
+                    "rgb(91, 15, 0)", "rgb(102, 0, 0)", "rgb(120, 63, 4)", "rgb(127, 96, 0)", "rgb(39, 78, 19)",
+                    "rgb(12, 52, 61)", "rgb(28, 69, 135)", "rgb(7, 55, 99)", "rgb(32, 18, 77)", "rgb(76, 17, 48)"
+                ]
+            ]
+        });
+    }
+    getcolor();
+    function sider() {
+        $(".shop_banner,.adv_module").slide({ titCell: ".hd ul", mainCell: ".bd ul", trigger: "click", delayTime: 0 });
+    }
+    //商品分类选择
+    $.category();
+    </script>
+</body>
+</html>
